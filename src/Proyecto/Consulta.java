@@ -2,10 +2,10 @@ package Proyecto;
 
 import Proyecto.ClasePadre_Abstracta;
 
-public class Consulta extends Clase_Abstracta{
+public class Consulta extends Clase_Abstracta {
 
     @Override
-    public void Transacciones(){
+    public void Transacciones() {
         System.out.println("====================================");
         System.out.println("=================BBVA===============");
         System.out.println("				Debito				");
@@ -13,3 +13,4 @@ public class Consulta extends Clase_Abstracta{
         System.out.println("Tu saldo actual es: " + getSaldo());
         System.out.println("====================================");
     }
+}
