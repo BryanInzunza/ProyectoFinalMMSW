@@ -1,6 +1,6 @@
 package Proyecto;
 
-import Proyecto.ClasePadre_Abstracta;
+import Proyecto.Clase_Abstracta;
 
 public class Consulta extends Clase_Abstracta {
 
