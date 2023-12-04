@@ -19,9 +19,9 @@ public class CajeroAutomatico {
     public CajeroAutomatico(Cuenta cuenta, Banco banco) {
         this.transacciones = new ArrayList<>();
         this.cuentas = List.of(
-                new Cuenta("393843", new Cliente("Max", "PEMEX"), "Cuenta de Ahorro", 343.0, "BBVA", new TarjetaDeDebito("1234")),
-                new Cuenta("93849", new Cliente("Kappa", "Camino Real"), "Cuenta de Cheques", 3123.3213, "Santaner", new TarjetaDeDebito("4321")),
-                new Cuenta("09320132", new Cliente("Bryan", "Barrancos"), "Cuenta de Ahorro", 123.0, "Banamex", new TarjetaDeDebito("1111"))
+                new Cuenta("393843", new Cliente("Max", "PEMEX"), "CUENTA DE AHORRO", 343.0, "BBVA", new TarjetaDeDebito("1234")),
+                new Cuenta("93849", new Cliente("Kappa", "Camino Real"), "CUENTA DE CHEQUES", 3123.3213, "Santaner", new TarjetaDeDebito("4321")),
+                new Cuenta("09320132", new Cliente("Bryan", "Barrancos"), "CUENTA DE AHORRO", 123.0, "Banamex", new TarjetaDeDebito("1111"))
         );
         this.cuentaActual = cuenta;
         this.banco = banco;
@@ -36,11 +36,11 @@ public class CajeroAutomatico {
         do {
             System.out.println(" \n Transacciones hasta el dia de hoy: ");
             transacciones.forEach(System.out::println);
-            System.out.println("===================================");
+            System.out.println("=======================================================================");
 
             System.out.println(" Buenas tardes esta en un cajero automatico de " + getBanco());
             System.out.println(" Hoy es " + fecha);
-            System.out.println(" Porfavor seleccione una opciÃ³n:");
+            System.out.println(" Porfavor seleccione una opción:");
             System.out.println("    1. Consulta de saldo.");
             System.out.println("    2. Retiro de efectivo.");
             System.out.println("    3. Deposito de efectivo.");
@@ -69,10 +69,10 @@ public class CajeroAutomatico {
                     System.out.println("Gracias por usar nuestros servicios");
                     break;
                 default:
-                    System.out.println("OpciÃ³n no valida");
+                    System.out.println("Opción no valida");
                     break;
             }
-            System.out.println("Presione ENTER para continuar...");
+            System.out.println("Presione ENTER para continuar.....");
             in.nextLine();
             in.nextLine();
         } while (seleccion != 5);
