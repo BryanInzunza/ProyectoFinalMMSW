@@ -34,8 +34,7 @@ public class CajeroAutomatico {
         int seleccion;
 
         do {
-            System.out.println("===================================");
-            System.out.println("Transacciones hasta el dia de hoy: ");
+            System.out.println(" \n Transacciones hasta el dia de hoy: ");
             transacciones.forEach(System.out::println);
             System.out.println("===================================");
 
